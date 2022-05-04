@@ -44,14 +44,11 @@ public class GameStateManager : MonoBehaviour
     }
     public void DroppedSheep()
     {
-        sheepDropped++; // 1
+        sheepDropped++; //I dont understand why, it calls this function 2 times
         UIManager.Instance.UpdateSheepDropped();
-
         if (sheepDropped == sheepDroppedBeforeGameOver) // 2
         {
             GameOver();
         }
     }
-
-
 }
